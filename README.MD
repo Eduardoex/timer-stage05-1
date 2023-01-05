@@ -1,6 +1,7 @@
-#Trilha Explorer
+# Trilha Explorer
 
-![Preview](./github/preview.png)
+![Preview](./.github/preview.png)
+
 
 Projeto construido na Trilha explorer. 
 
