@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+font-size: 62.2%;
+
+--bg-color: hsl(0, 0%, 90%);
+--text-color: hsl(240, 6%, 21%);
+--button-color: hsl(240, 9%, 89%);
+--button-select: hsl(194, 97%, 31%);
+}
+
+body {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1rem, 10vw, 19rem);
+}
+
+main {
+  max-width: 32.1rem;
+  justify-self: center;
+}
+
+.timer {
+  margin-bottom: 3rem;
+  
+}
+
+.timer span{
+  font-style: normal;
+  text-align: center;
+  font-size: 12rem;
+  line-height: 14.8rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button path {
+  fill: var(--text-color)
+}
+
+
+.sounds {
+  display: flex;
+  gap: 3.2rem;
+  flex-wrap: wrap;
+  max-width: 32rem;
+
+}
+
+.sounds :hover {
+  transition: 0.50s;
+  transform: scale(1.06);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+.sounds button {
+  display: flex;
+  border-radius: 2.4rem;
+  padding: 4.8rem;
+  background-color: var(--button-color);
+  max-width: 13.8rem;
+  max-height: 15.2rem;
+}
+
+button.select {
+  background: var(--button-select)
+}
+
+.select path {
+  fill: #ffffff
+}
+
+
+
+@media (max-width: 698px){
+  body {
+    flex-direction: column;
+  }
+}
