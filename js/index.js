@@ -56,8 +56,12 @@ function addFiveMinutes() {
   let seconds = Number(secondsDisplay.textContent);
   let minutes = Number(minutesDisplay.textContent);
   
-  
-    updateTimerDisplay(String(minutes + 5), seconds);
+  if (minutes >= 95){
+    alert("O contador não pode passar de 95 minutos")
+  }else{
+      updateTimerDisplay(String(minutes + 5), seconds);
+    }
+    
 }
 
   function minusFiveMinutes() {
